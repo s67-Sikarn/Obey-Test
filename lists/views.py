@@ -9,3 +9,6 @@ def home_page(request):
 
     items = Item.objects.all()
     return render(request, "home.html", {"items": items})
+
+def about_me(request):
+    return render(request, 'about_me.html')
